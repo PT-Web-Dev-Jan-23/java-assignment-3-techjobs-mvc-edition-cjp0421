@@ -41,27 +41,27 @@
         <table class="job-listing">
             <tr>
                 <td>ID</td>
-                <td th:text="${job.id}">ID not found.</td>
+                <td th:text = "${job.id}">Specific ID</td>
             </tr>
             <tr>
                 <td>Name</td>
-                <td th:text="${job.name}">Name not found.</td>
+                <td th:text = "${job.name}">Specific name</td>
             </tr>
             <tr>
                 <td>Employer</td>
-                <td th:text="${job.employer}">Employer not found.</td>
+                <td th:text = "${job.employer}">Specific employer</td>
             </tr>
             <tr>
                 <td>Location</td>
-                <td th:text="${job.location}">Location not found.</td>
+                <td th:text = "${job.location}">Specific Location</td>
             </tr>
             <tr>
                 <td>Position Type</td>
-                <td th:text="${job.positionType}">Position type not found.</td>
+                <td th:text = "${job.positionType}">Specific position type</td>
             </tr>
             <tr>
-                <td>Core Competency</td>
-                <td th:text="${job.coreCompetency}">Core competency not found.</td>
+                <td>Core Competency </td>
+                <td th:text = "${job.getCoreCompetency}">Specific core competency</td>
             </tr>
         </table>
     </th:block>
