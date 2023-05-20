@@ -95,6 +95,7 @@ public class TestTaskThree {
 
         Model model = new ExtendedModelMap();
         displaySearchResultsMethod.invoke(searchController, model, "all", "all");
+        //all
     }
 
     /*

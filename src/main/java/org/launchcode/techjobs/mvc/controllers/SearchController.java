@@ -28,9 +28,11 @@ public class SearchController {
     }
 
     // TODO #3 - Create a handler to process a search request and render the updated search view.
-    @PostMapping("/results")
+    @PostMapping("results")
+    //add or remove the slash
     public String displaySearchResults(Model model, @RequestParam String searchType, @RequestParam(required = false) String searchTerm){
         ArrayList<Job> jobs;
+        jobs = JobData.findAll();
         if (searchType.equals("all")){
             if(searchTerm.isEmpty() || searchTerm.isBlank()){
                     jobs = JobData.findAll();
